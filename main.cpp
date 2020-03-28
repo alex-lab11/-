@@ -7,10 +7,10 @@ int main() {
 book p;
 
     int i = 0,n=0,x;
-    cout<<" input number of books"<<endl;///âûâîä çàïðîñà íà ââîä ÷èñëà êíèã
+    cout<<" input number of books"<<endl;///Ð²Ñ‹Ð²Ð¾Ð´ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ° Ð½Ð° Ð²Ð²Ð¾Ð´ Ñ‡Ð¸ÑÐ»Ð° ÐºÐ½Ð¸Ð³
 cin>>x;
 while(n!=x){
-    cout << "input 1(information by default)" << endl << "input 2(information about book)" << endl << "input 3 for copy" << endl;///âûâîä ìåíþ
+    cout << "input 1(information by default)" << endl << "input 2(information about book)" << endl << "input 3 for copy" << endl;///Ð²Ñ‹Ð²Ð¾Ð´ Ð¼ÐµÐ½ÑŽ
     cin >> i;
 
     if (i == 1) {
