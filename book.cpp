@@ -2,9 +2,9 @@
 #include "book.h"
 #include <stdlib.h>
 #include <string.h>
-///в этом файле происходит описание всех действий описнных в book.h
+///в этом файле происходит описание всех действий описанных в book.h
 using namespace std;
-book::book():book ("none", "none", 0){}//конструктор без параметров
+book::book():book ("none", "none", 0){}//конструктор без параметров(по умолчанию)
 book::book(char *name, char *author, int pagesCount) ///конструктор с параметрами
 {
  this->name = 0;
