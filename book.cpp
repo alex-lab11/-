@@ -2,10 +2,10 @@
 #include "book.h"
 #include <stdlib.h>
 #include <string.h>
-///в этом файле происходит описание всех действий описнных в bookh
+///РІ СЌС‚РѕРј С„Р°Р№Р»Рµ РїСЂРѕРёСЃС…РѕРґРёС‚ РѕРїРёСЃР°РЅРёРµ РІСЃРµС… РґРµР№СЃС‚РІРёР№ РѕРїРёСЃРЅРЅС‹С… РІ book.h
 using namespace std;
-book::book():book ("none", "none", 0){}///конструктор с парметрами по умолчанию
-book::book(char *name, char *author, int pagesCount) ///конструктор с параметрами
+book::book():book ("none", "none", 0){}//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ
+book::book(char *name, char *author, int pagesCount) ///РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
 {
  this->name = 0;
     this->author = 0;
@@ -15,44 +15,44 @@ book::book(char *name, char *author, int pagesCount) ///конструктор с параметрам
   setPagesCount(pagesCount);
 }
 
-book::book(book&p):book(p.name, p.author, p.pagesCount) {}///конструктор копирования
- void book::print()///вывод информации о книге
+book::book(book&p):book(p.name, p.author, p.pagesCount) {}///РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
+ void book::print()///РІС‹РІРѕРґ РёРЅС„РѕСЂРјР°С†РёРё Рѕ РєРЅРёРіРµ
  {
      cout << "Name: " << name << "\nAuthor: " << author << "\nPagesCount: " << pagesCount <<endl;
  }
-void book::setPagesCount(int pagesCount)///установка числа страниц кнпиги
+void book::setPagesCount(int pagesCount)///СѓСЃС‚Р°РЅРѕРІРєР° С‡РёСЃР»Р° СЃС‚СЂР°РЅРёС† РєРЅРїРёРіРё
+{
 {
     this->pagesCount=pagesCount;
 }
-void book::setName(char *name)///установка имя книги
+void book::setName(char *name)///СѓСЃС‚Р°РЅРѕРІРєР° РёРјРµРЅРё РєРЅРёРіРё
 {
    delete [] this->name;
    size_t l=strlen(name);
    this-> name = new char [l+1];
    strcpy(this->name, name);
 }
-void book::setAuthor(char *author)///установка автора книги
+void book::setAuthor(char *author)///СѓСЃС‚Р°РЅРѕРІРєР° Р°РІС‚РѕСЂР° РєРЅРёРіРё
 {
    delete [] this->author;
    size_t len=strlen(author);
    this-> author = new char[len+1];
    strcpy(this->author, author);
 }
- char *book::getAuthor() ///взятие автора книги из объекта класса
+ char *book::getAuthor() ///РІР·СЏС‚РёРµ Р°РІС‚РѕСЂР° РєРЅРёРіРё РёР· РѕР±СЉРµРєС‚Р° РєР»Р°СЃСЃР°
     {
        return author;
     }
-
-char *book::getName() ///взятие имени книги из объекта класса
+char *book::getName() ///РІР·СЏС‚РёРµ РЅР°Р·РІР°РЅРёСЏ РєРЅРёРіРё РёР· РѕР±СЉРµРєС‚Р° РєР»Р°СЃСЃР°
     {
         return name;
     }
-int book::getPagesCount() ///взятие числа страниц книги из объекта класса
+int book::getPagesCount() ///РІР·СЏС‚РёРµ С‡РёСЃР»Р° СЃС‚СЂР°РЅРёС† РєРЅРёРіРё РёР· РѕР±СЉРµРєС‚Р° РєР»Р°СЃСЃР°
     {
         return pagesCount;
     }
 
-    book::~book() ///деструктор
+    book::~book() ///РґРµСЃС‚СЂСѓРєС‚РѕСЂ
     {
         delete [] name;
         delete [] author;
