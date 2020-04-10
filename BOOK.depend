@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1586458224 source:c:\users\kirev\onedrive\–абочий стол\лабораторные\1 лабораторка\book\book.cpp
+	<iostream>
+	"book.h"
+	<stdlib.h>
+	<string.h>
+
+1586458231 c:\users\kirev\onedrive\–абочий стол\лабораторные\1 лабораторка\book\book.h
+	<string>
+	<stdlib.h>
+
+1586444505 source:c:\users\kirev\onedrive\–абочий стол\лабораторные\1 лабораторка\book\main.cpp
+	<iostream>
+	<cstring>
+	"book.h"
+
